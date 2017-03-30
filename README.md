@@ -7,7 +7,8 @@ New Features
 --------------
 
 * Disk Read/Write 
-* Lan/Ext IP's 
+* Lan/Ext IP's
+* City of your IP (useful for VPN) 
 
 Screenshot
 ----------------
