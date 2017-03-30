@@ -23,14 +23,14 @@ conky.config = {
 	gap_y = 70,
 	minimum_width = 300, minimum_height = 900,
 	maximum_width = 350,
+
 	own_window = true,
 	own_window_type = 'override',
 	own_window_transparent = true,
 	own_window_argb_visual = true,
-
-	own_window_type = 'override',
 	own_window_class = 'conky-semi',
 	own_window_hints = 'undecorated,sticky,skip_taskbar,skip_pager,below',
+
 	border_inner_margin = 0,
 	border_outer_margin = 0,
 	alignment = 'top_right',
