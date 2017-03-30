@@ -72,7 +72,7 @@ ${offset 15}${font Ubuntu:size=11:style=normal}${color1}Uptime: ${color3}$uptime
 
 # Showing CPU Graph
 ${voffset 20}
-${offset 125}${cpugraph cpu0 40,220 666666 666666 -0.5 -l}${voffset -25}
+${offset 125}${cpugraph cpu0 40,220 666666 666666 -0.3}${voffset -25}
 ${offset 90}${font Ubuntu:size=11:style=bold}${color5}CPU
 # Showing TOP 5 CPU-consumers
 ${offset 105}${font Ubuntu:size=11:style=normal}${color4}${top name 1}${alignr}${top cpu 1}%
@@ -96,18 +96,19 @@ ${offset 180}${color1}${font Ubuntu:size=10:style=bold}Disk Read: ${alignr}${fon
 ${offset 180}${color1}${font Ubuntu:size=10:style=bold}Disk Write: ${alignr}${font Ubuntu:size=10:style=normal}${color2}${diskio_write}
 ${voffset -30}
 ${offset 90}${font Ubuntu:size=11:style=bold}${color5}DISKS
-${offset 120}${diskiograph 33,220 666666 666666}${voffset -30}
+${offset 120}${diskiograph 40,220 666666 666666 -0.5}${voffset -30}
 ${voffset 20}
 ${offset 15}${font Ubuntu:size=10:style=bold}${color1}Free: $color3${font Ubuntu:size=10:style=normal}${fs_free /}${alignr}${font Ubuntu:size=10:style=bold}${color1}Used: $color3${font Ubuntu:size=10:style=normal}${fs_used /}
 ${offset 15}${font Ubuntu:size=10:style=bold}${color1}Free: $color3${font Ubuntu:size=10:style=normal}${fs_free /home}${alignr}${font Ubuntu:size=10:style=bold}${color1}Used: $color3${font Ubuntu:size=10:style=normal}${fs_used /home}
 ${offset 15}${font Ubuntu:size=10:style=bold}${color1}Free: $color3${font Ubuntu:size=10:style=normal}${fs_free /media/files}${alignr}${font Ubuntu:size=10:style=bold}${color1}Used: $color3${font Ubuntu:size=10:style=normal}${fs_used /media/files}
 
 # Network data (my desktop have only LAN). ETHERNET ring is mostly useless but looks pretty, main info is in the graphs
-${voffset 40}
+${voffset 45}
 ${offset 200}${font Ubuntu:size=10:style=bold}${color1}Lan IP: ${alignr}$color3${addr wlan0} 
 ${offset 200}${font Ubuntu:size=10:style=bold}${color1}Ext IP: ${alignr}$color3${execi 600 wget -q -O /dev/stdout http://checkip.dyndns.org/ | cut -d : -f 2- | cut -d \< -f -1} 
-${offset 200}${font Ubuntu:size=10:style=bold}${alignr}$color3${execi 600 wget -q -O /dev/stdout https://www.dnsleaktest.com/ | grep from | grep -o '<p>.*<img' | grep -o '>.*<' | grep -oEi '[a-zA-Z0-9 ,]+'}
-${voffset -30}
+${offset 190}${font Ubuntu:size=10:style=bold}${alignr}$color3${execi 600 wget -q -O /dev/stdout https://www.dnsleaktest.com/ | grep from | grep -o '<p>.*<img' | grep -o '>.*<' | grep -oEi '[a-zA-Z0-9 ,]+'}
+
+${voffset -60}
 ${offset 90}${font Ubuntu:size=11:style=bold}${color5}ETHERNET
 ${voffset 40}             
 ${offset 15}${color1}${font ubuntu:size=10:style=bold}Up: ${alignr}${font Ubuntu:size=10:style=normal}$color2${upspeed wlan0} / ${totalup wlan0}
