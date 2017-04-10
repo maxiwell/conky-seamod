@@ -25,7 +25,7 @@ conky.config = {
 	maximum_width = 350,
 
 	own_window = true,
-	own_window_type = 'override',
+	own_window_type = 'normal',
 	own_window_transparent = true,
 	own_window_argb_visual = true,
 	own_window_class = 'conky-semi',
