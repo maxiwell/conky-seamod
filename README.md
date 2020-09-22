@@ -13,7 +13,7 @@ New Features
 Screenshot
 ----------------
 
-![alt text](http://i67.tinypic.com/20qz9xh.png)
+![alt text](screenshot.png)
 
 
 Original Theme
