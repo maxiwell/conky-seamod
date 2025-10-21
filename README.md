@@ -6,6 +6,8 @@ Seamod theme was built by SeaJey. I modified the original theme for conky 1.10 c
 New Features
 --------------
 
+bye
+
 * Disk Read/Write 
 * Lan/Ext IP's
 * City of your IP (useful for VPN) 
